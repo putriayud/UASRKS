@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3B8B8"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Selamat Datang di Chat Me"
+        android:textColor="#19030D"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_below="@id/judul"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:src="@drawable/logoo"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/syarat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:textSize="15sp"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
+        android:text="Baca Kebijakan Privasi kami. Ketuk 'Setuju dan Lanjutkan'"
+        />
+    <TextView
+        android:id="@+id/syarat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/syarat"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:text="untuk menerima Ketentuan Layanan"
+        />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/syarat1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:text="SETUJU DAN LANJUTKAN" />
+
+</RelativeLayout>
